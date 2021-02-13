@@ -29,7 +29,15 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    width:80%;
+    line-height: 1;
+    margin:auto;
+    align-content: center;
+}
+
+header{
+    display: inline-block;
+    width: 62.5%;
 }
 ol, ul {
 	list-style: none;
@@ -48,10 +56,13 @@ table {
 }
 
 * {
+    display: inline-block;
     box-sizing: border-box;
+    max-height: 37.5rem;
 }
 
 html, body {
+    display:inline-block;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -66,9 +77,14 @@ p {
     line-height: 1.4;
 }
 
+.main-box{
+    align-content:center;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+    padding:5rem;
 }
 
 .top-content {
@@ -101,7 +117,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes *{
     width: 12.5%;
     height: 100px;
     background: black;
@@ -112,6 +128,46 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box-1{
+    background-color: teal;
+}
+
+.middle-content .boxes .box-2{
+    background-color: gold;
+}
+
+.middle-content .boxes .box-3{
+    background-color:cadetblue;
+}
+
+.middle-content .boxes .box-4{
+    background-color:coral;
+}
+
+.middle-content .boxes .box-5{
+    background-color: crimson;
+}
+
+.middle-content .boxes .box-6{
+    background-color:forestgreen;
+}
+
+.middle-content .boxes .box-7{
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box-8{
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box-9{
+    background-color: indigo;
+}
+
+.middle-content .boxes .box-10{
+    background-color: dodgerblue
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +176,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-weight: 200;
 }
 
 .bottom-content .text-container:last-child {
@@ -136,11 +193,14 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
+    padding-right: 6%;
+    justify-content: space-evenly;
 }
